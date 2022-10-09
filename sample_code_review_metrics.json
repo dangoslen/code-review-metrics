@@ -1,0 +1,1849 @@
+{
+  "data": {
+    "search": {
+      "issueCount": 130,
+      "edges": [
+        {
+          "node": {
+            "number": 209,
+            "title": "Support unreleased only changelogs",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2022-07-18T15:03:06Z",
+            "mergedAt": "2022-07-18T15:18:04Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/209",
+            "changedFiles": 8,
+            "additions": 55,
+            "deletions": 5
+          }
+        },
+        {
+          "node": {
+            "number": 206,
+            "title": "Releases/v3.2.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2022-07-09T17:01:10Z",
+            "mergedAt": "2022-07-09T17:09:45Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/206",
+            "changedFiles": 9,
+            "additions": 6681,
+            "deletions": 3849
+          }
+        },
+        {
+          "node": {
+            "number": 204,
+            "title": "Bump @actions/github from 5.0.0 to 5.0.2",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2022-05-12T20:05:09Z",
+            "mergedAt": "2022-05-12T20:15:38Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/204",
+            "changedFiles": 4,
+            "additions": 6655,
+            "deletions": 3830
+          }
+        },
+        {
+          "node": {
+            "number": 202,
+            "title": "Bump uglify-js from 3.14.3 to 3.15.5",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2022-05-12T19:06:21Z",
+            "mergedAt": "2022-05-12T19:14:09Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/202",
+            "changedFiles": 3,
+            "additions": 12,
+            "deletions": 10
+          }
+        },
+        {
+          "node": {
+            "number": 198,
+            "title": "Bump stefanzweifel/git-auto-commit-action from 4.14.0 to 4.14.1",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2022-05-06T21:00:43Z",
+            "mergedAt": "2022-05-12T20:31:50Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/198",
+            "changedFiles": 2,
+            "additions": 3,
+            "deletions": 2
+          }
+        },
+        {
+          "node": {
+            "number": 196,
+            "title": "Bump @vercel/ncc from 0.31.1 to 0.33.4",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2022-05-05T00:39:31Z",
+            "mergedAt": "2022-05-05T00:47:21Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/196",
+            "changedFiles": 4,
+            "additions": 48,
+            "deletions": 46
+          }
+        },
+        {
+          "node": {
+            "number": 195,
+            "title": "Bump actions/checkout from 2.4.0 to 3.0.2",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2022-05-05T00:26:14Z",
+            "mergedAt": "2022-05-05T00:29:17Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/195",
+            "changedFiles": 3,
+            "additions": 4,
+            "deletions": 3
+          }
+        },
+        {
+          "node": {
+            "number": 194,
+            "title": "Releases/v3.1.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2022-05-05T00:20:03Z",
+            "mergedAt": "2022-05-06T21:00:26Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/194",
+            "changedFiles": 12,
+            "additions": 3517,
+            "deletions": 5552
+          }
+        },
+        {
+          "node": {
+            "number": 191,
+            "title": "Bump stefanzweifel/git-auto-commit-action from 4.13.1 to 4.14.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2022-03-21T10:02:47Z",
+            "mergedAt": "2022-05-05T00:34:57Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/191",
+            "changedFiles": 2,
+            "additions": 7,
+            "deletions": 5
+          }
+        },
+        {
+          "node": {
+            "number": 190,
+            "title": "Releases/v3.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2022-03-14T13:33:43Z",
+            "mergedAt": "2022-05-05T00:11:35Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/190",
+            "changedFiles": 5,
+            "additions": 9106,
+            "deletions": 2068
+          }
+        },
+        {
+          "node": {
+            "number": 182,
+            "title": "Bump stefanzweifel/git-auto-commit-action from 4.11.0 to 4.13.1",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2022-01-17T10:02:32Z",
+            "mergedAt": "2022-03-04T13:34:36Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/182",
+            "changedFiles": 3,
+            "additions": 5013,
+            "deletions": 7
+          }
+        },
+        {
+          "node": {
+            "number": 173,
+            "title": "Token Docs",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-11-19T14:57:11Z",
+            "mergedAt": "2021-11-19T15:00:08Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/173",
+            "changedFiles": 5,
+            "additions": 20,
+            "deletions": 6
+          }
+        },
+        {
+          "node": {
+            "number": 172,
+            "title": "Error on missing token",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-11-18T02:55:32Z",
+            "mergedAt": "2021-11-18T02:57:41Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/172",
+            "changedFiles": 6,
+            "additions": 58,
+            "deletions": 7
+          }
+        },
+        {
+          "node": {
+            "number": 170,
+            "title": "Adding client tests",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-11-14T20:14:20Z",
+            "mergedAt": "2021-11-14T20:17:03Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/170",
+            "changedFiles": 3,
+            "additions": 65,
+            "deletions": 4
+          }
+        },
+        {
+          "node": {
+            "number": 169,
+            "title": "Releases/v3.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-11-11T22:12:41Z",
+            "mergedAt": "2021-12-28T19:11:08Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/169",
+            "changedFiles": 19,
+            "additions": 1569,
+            "deletions": 2722
+          }
+        },
+        {
+          "node": {
+            "number": 168,
+            "title": "Bump eslint from 8.1.0 to 8.2.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-11-08T10:13:59Z",
+            "mergedAt": "2021-11-11T22:04:12Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/168",
+            "changedFiles": 3,
+            "additions": 38,
+            "deletions": 14
+          }
+        },
+        {
+          "node": {
+            "number": 167,
+            "title": "Bump uglify-js from 3.14.2 to 3.14.3",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-11-08T10:13:28Z",
+            "mergedAt": "2021-11-11T22:06:18Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/167",
+            "changedFiles": 3,
+            "additions": 5,
+            "deletions": 5
+          }
+        },
+        {
+          "node": {
+            "number": 166,
+            "title": "Bump actions/checkout from 2.3.4 to 2.4.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-11-08T10:02:33Z",
+            "mergedAt": "2021-11-11T22:08:24Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/166",
+            "changedFiles": 3,
+            "additions": 4,
+            "deletions": 3
+          }
+        },
+        {
+          "node": {
+            "number": 165,
+            "title": "README: make some passages more explicit",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": [
+                {
+                  "node": {
+                    "firstReviewedAt": "2021-11-01T22:20:35Z",
+                    "author": {
+                      "reviewedBy": "dangoslen"
+                    },
+                    "state": "APPROVED"
+                  }
+                }
+              ]
+            },
+            "createdAt": "2021-11-01T21:59:37Z",
+            "mergedAt": "2021-11-01T22:23:05Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/165",
+            "changedFiles": 1,
+            "additions": 8,
+            "deletions": 5
+          }
+        },
+        {
+          "node": {
+            "number": 164,
+            "title": "Bump jest from 27.0.5 to 27.3.1",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-11-01T13:08:29Z",
+            "mergedAt": "2021-11-07T14:03:56Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/164",
+            "changedFiles": 3,
+            "additions": 621,
+            "deletions": 613
+          }
+        },
+        {
+          "node": {
+            "number": 162,
+            "title": "Bump eslint from 7.28.0 to 8.1.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-11-01T12:55:20Z",
+            "mergedAt": "2021-11-07T14:16:39Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/162",
+            "changedFiles": 3,
+            "additions": 114,
+            "deletions": 218
+          }
+        },
+        {
+          "node": {
+            "number": 161,
+            "title": "Use api",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-10-31T13:59:40Z",
+            "mergedAt": "2021-11-01T12:49:26Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/161",
+            "changedFiles": 14,
+            "additions": 302,
+            "deletions": 1711
+          }
+        },
+        {
+          "node": {
+            "number": 159,
+            "title": "Bump @vercel/ncc from 0.28.6 to 0.31.1",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-10-29T19:10:50Z",
+            "mergedAt": "2021-11-01T12:54:39Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/159",
+            "changedFiles": 4,
+            "additions": 22,
+            "deletions": 21
+          }
+        },
+        {
+          "node": {
+            "number": 158,
+            "title": "Bump @actions/core from 1.4.0 to 1.6.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-10-29T19:10:22Z",
+            "mergedAt": "2021-11-01T13:00:05Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/158",
+            "changedFiles": 4,
+            "additions": 204,
+            "deletions": 12
+          }
+        },
+        {
+          "node": {
+            "number": 157,
+            "title": "Bump uglify-js from 3.13.9 to 3.14.2",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-10-29T19:10:03Z",
+            "mergedAt": "2021-11-01T13:06:52Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/157",
+            "changedFiles": 3,
+            "additions": 10,
+            "deletions": 5
+          }
+        },
+        {
+          "node": {
+            "number": 148,
+            "title": "Improving documentation based on feedback",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": [
+                {
+                  "node": {
+                    "firstReviewedAt": "2021-08-30T22:07:33Z",
+                    "author": {
+                      "reviewedBy": "waldyrious"
+                    },
+                    "state": "COMMENTED"
+                  }
+                }
+              ]
+            },
+            "createdAt": "2021-08-30T18:58:27Z",
+            "mergedAt": "2021-08-31T12:33:57Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/148",
+            "changedFiles": 6,
+            "additions": 81,
+            "deletions": 17
+          }
+        },
+        {
+          "node": {
+            "number": 143,
+            "title": "Cherry pick v2.3.1",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-08-17T20:46:55Z",
+            "mergedAt": "2021-08-17T21:10:30Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/143",
+            "changedFiles": 10,
+            "additions": 94,
+            "deletions": 9
+          }
+        },
+        {
+          "node": {
+            "number": 141,
+            "title": "Only run on a pull request payload",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-08-15T19:37:42Z",
+            "mergedAt": "2021-08-15T23:22:22Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/141",
+            "changedFiles": 10,
+            "additions": 96,
+            "deletions": 11
+          }
+        },
+        {
+          "node": {
+            "number": 136,
+            "title": "Bump ws from 7.4.0 to 7.5.3",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-07-14T11:40:48Z",
+            "mergedAt": "2021-07-25T17:57:45Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/136",
+            "changedFiles": 2,
+            "additions": 4,
+            "deletions": 3
+          }
+        },
+        {
+          "node": {
+            "number": 133,
+            "title": "Bump jest from 27.0.4 to 27.0.5",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-06-23T10:11:40Z",
+            "mergedAt": "2021-06-28T17:18:50Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/133",
+            "changedFiles": 3,
+            "additions": 341,
+            "deletions": 285
+          }
+        },
+        {
+          "node": {
+            "number": 131,
+            "title": "Bump @actions/exec from 1.0.4 to 1.1.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-06-21T12:18:28Z",
+            "mergedAt": "2021-06-28T17:17:24Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/131",
+            "changedFiles": 4,
+            "additions": 254,
+            "deletions": 127
+          }
+        },
+        {
+          "node": {
+            "number": 130,
+            "title": "Releases/v2.3",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-06-21T12:16:34Z",
+            "mergedAt": "2021-08-13T17:07:50Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/130",
+            "changedFiles": 6,
+            "additions": 1808,
+            "deletions": 4436
+          }
+        },
+        {
+          "node": {
+            "number": 129,
+            "title": "Bump @actions/core from 1.3.0 to 1.4.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-06-21T11:59:05Z",
+            "mergedAt": "2021-06-21T12:16:20Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/129",
+            "changedFiles": 4,
+            "additions": 22,
+            "deletions": 7
+          }
+        },
+        {
+          "node": {
+            "number": 128,
+            "title": "Bump eslint from 7.27.0 to 7.28.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-06-07T07:40:32Z",
+            "mergedAt": "2021-06-21T11:58:27Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/128",
+            "changedFiles": 3,
+            "additions": 27,
+            "deletions": 161
+          }
+        },
+        {
+          "node": {
+            "number": 127,
+            "title": "Bump uglify-js from 3.13.8 to 3.13.9",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-06-07T07:39:57Z",
+            "mergedAt": "2021-06-21T12:15:09Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/127",
+            "changedFiles": 3,
+            "additions": 5,
+            "deletions": 5
+          }
+        },
+        {
+          "node": {
+            "number": 126,
+            "title": "Bump jest from 27.0.3 to 27.0.4",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-06-07T07:39:28Z",
+            "mergedAt": "2021-06-21T12:13:17Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/126",
+            "changedFiles": 3,
+            "additions": 93,
+            "deletions": 91
+          }
+        },
+        {
+          "node": {
+            "number": 125,
+            "title": "Bump jest from 27.0.1 to 27.0.3",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-05-31T07:42:23Z",
+            "mergedAt": "2021-06-05T02:29:35Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/125",
+            "changedFiles": 3,
+            "additions": 315,
+            "deletions": 315
+          }
+        },
+        {
+          "node": {
+            "number": 123,
+            "title": "Bump uglify-js from 3.13.7 to 3.13.8",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-05-27T06:43:34Z",
+            "mergedAt": "2021-06-04T13:31:44Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/123",
+            "changedFiles": 3,
+            "additions": 5,
+            "deletions": 5
+          }
+        },
+        {
+          "node": {
+            "number": 122,
+            "title": "Bump jest from 26.6.3 to 27.0.1",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-05-26T06:14:36Z",
+            "mergedAt": "2021-05-26T13:22:37Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/122",
+            "changedFiles": 3,
+            "additions": 931,
+            "deletions": 3821
+          }
+        },
+        {
+          "node": {
+            "number": 121,
+            "title": "Bump @vercel/ncc from 0.28.5 to 0.28.6",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-05-26T06:14:02Z",
+            "mergedAt": "2021-05-26T13:22:03Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/121",
+            "changedFiles": 3,
+            "additions": 5,
+            "deletions": 5
+          }
+        },
+        {
+          "node": {
+            "number": 120,
+            "title": "Bump eslint from 7.26.0 to 7.27.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-05-24T07:39:41Z",
+            "mergedAt": "2021-05-25T14:47:00Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/120",
+            "changedFiles": 3,
+            "additions": 33,
+            "deletions": 13
+          }
+        },
+        {
+          "node": {
+            "number": 119,
+            "title": "Bump @actions/core from 1.2.7 to 1.3.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-05-24T07:38:50Z",
+            "mergedAt": "2021-05-24T14:02:41Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/119",
+            "changedFiles": 4,
+            "additions": 84,
+            "deletions": 16
+          }
+        },
+        {
+          "node": {
+            "number": 118,
+            "title": "Bump dangoslen/dependabot-changelog-helper from 0.3.2 to 1",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-05-21T05:59:09Z",
+            "mergedAt": "2021-05-24T13:58:02Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/118",
+            "changedFiles": 2,
+            "additions": 2,
+            "deletions": 1
+          }
+        },
+        {
+          "node": {
+            "number": 117,
+            "title": "Bump uglify-js from 3.13.6 to 3.13.7",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-05-19T06:39:51Z",
+            "mergedAt": "2021-05-20T15:24:12Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/117",
+            "changedFiles": 3,
+            "additions": 5,
+            "deletions": 5
+          }
+        },
+        {
+          "node": {
+            "number": 116,
+            "title": "Bump @actions/github from 4.0.0 to 5.0.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-05-17T07:35:32Z",
+            "mergedAt": "2021-05-18T00:57:12Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/116",
+            "changedFiles": 4,
+            "additions": 340,
+            "deletions": 220
+          }
+        },
+        {
+          "node": {
+            "number": 115,
+            "title": "Minor typo fix(es)",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-05-12T10:30:07Z",
+            "mergedAt": "2021-05-12T11:05:56Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/115",
+            "changedFiles": 3,
+            "additions": 3,
+            "deletions": 3
+          }
+        },
+        {
+          "node": {
+            "number": 113,
+            "title": "Bump hosted-git-info from 2.8.8 to 2.8.9",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-05-11T16:54:34Z",
+            "mergedAt": "2021-05-16T22:49:21Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/113",
+            "changedFiles": 2,
+            "additions": 4,
+            "deletions": 3
+          }
+        },
+        {
+          "node": {
+            "number": 112,
+            "title": "Bump @vercel/ncc from 0.28.2 to 0.28.5",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-05-11T13:45:59Z",
+            "mergedAt": "2021-05-13T01:51:28Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/112",
+            "changedFiles": 3,
+            "additions": 5,
+            "deletions": 4
+          }
+        },
+        {
+          "node": {
+            "number": 111,
+            "title": "Bump uglify-js from 3.13.3 to 3.13.6",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-05-11T13:45:19Z",
+            "mergedAt": "2021-05-13T01:47:41Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/111",
+            "changedFiles": 3,
+            "additions": 5,
+            "deletions": 4
+          }
+        },
+        {
+          "node": {
+            "number": 110,
+            "title": "Bump eslint from 7.25.0 to 7.26.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-05-11T13:44:34Z",
+            "mergedAt": "2021-05-12T20:55:55Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/110",
+            "changedFiles": 3,
+            "additions": 25,
+            "deletions": 31
+          }
+        },
+        {
+          "node": {
+            "number": 109,
+            "title": "Bump stefanzweifel/git-auto-commit-action from 4 to 4.11.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-05-11T13:43:49Z",
+            "mergedAt": "2021-05-11T15:59:24Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/109",
+            "changedFiles": 4,
+            "additions": 38,
+            "deletions": 6
+          }
+        },
+        {
+          "node": {
+            "number": 108,
+            "title": "Bump actions/create-release from 1 to 1.1.4",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-05-11T13:43:45Z",
+            "mergedAt": "2021-05-12T20:50:40Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/108",
+            "changedFiles": 2,
+            "additions": 2,
+            "deletions": 1
+          }
+        },
+        {
+          "node": {
+            "number": 107,
+            "title": "Bump actions/checkout from 2 to 2.3.4",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-05-11T13:43:43Z",
+            "mergedAt": "2021-05-12T11:18:15Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/107",
+            "changedFiles": 4,
+            "additions": 5,
+            "deletions": 29
+          }
+        },
+        {
+          "node": {
+            "number": 106,
+            "title": "Bump lodash from 4.17.19 to 4.17.21",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-05-11T11:37:46Z",
+            "mergedAt": "2021-05-11T15:41:51Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/106",
+            "changedFiles": 2,
+            "additions": 7,
+            "deletions": 10
+          }
+        },
+        {
+          "node": {
+            "number": 105,
+            "title": "Bump eslint from 7.23.0 to 7.25.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-04-26T09:51:10Z",
+            "mergedAt": "2021-04-26T12:39:58Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/105",
+            "changedFiles": 3,
+            "additions": 19,
+            "deletions": 68
+          }
+        },
+        {
+          "node": {
+            "number": 104,
+            "title": "Releases/v2.2",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-04-23T01:34:27Z",
+            "mergedAt": "2021-04-26T14:25:06Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/104",
+            "changedFiles": 8,
+            "additions": 125,
+            "deletions": 151
+          }
+        },
+        {
+          "node": {
+            "number": 103,
+            "title": "Bump @actions/core from 1.2.6 to 1.2.7",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-04-14T07:44:00Z",
+            "mergedAt": "2021-04-16T01:37:07Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/103",
+            "changedFiles": 4,
+            "additions": 6,
+            "deletions": 4
+          }
+        },
+        {
+          "node": {
+            "number": 102,
+            "title": "Fixing dependabot builds",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-04-13T14:08:07Z",
+            "mergedAt": "2021-04-13T14:13:31Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/102",
+            "changedFiles": 4,
+            "additions": 99,
+            "deletions": 4
+          }
+        },
+        {
+          "node": {
+            "number": 98,
+            "title": "Bump y18n from 5.0.7 to 5.0.8",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-04-08T13:51:36Z",
+            "mergedAt": "2021-04-08T14:12:39Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/98",
+            "changedFiles": 3,
+            "additions": 5,
+            "deletions": 5
+          }
+        },
+        {
+          "node": {
+            "number": 97,
+            "title": "Bump @vercel/ncc from 0.28.1 to 0.28.2",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-04-08T07:59:33Z",
+            "mergedAt": "2021-04-08T13:59:58Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/97",
+            "changedFiles": 3,
+            "additions": 5,
+            "deletions": 5
+          }
+        },
+        {
+          "node": {
+            "number": 96,
+            "title": "Bump @vercel/ncc from 0.28.0 to 0.28.1",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-04-07T07:58:18Z",
+            "mergedAt": "2021-04-07T13:48:51Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/96",
+            "changedFiles": 4,
+            "additions": 24,
+            "deletions": 28
+          }
+        },
+        {
+          "node": {
+            "number": 95,
+            "title": "Bump y18n from 5.0.6 to 5.0.7",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-04-07T07:57:00Z",
+            "mergedAt": "2021-04-08T13:50:33Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/95",
+            "changedFiles": 3,
+            "additions": 5,
+            "deletions": 5
+          }
+        },
+        {
+          "node": {
+            "number": 94,
+            "title": "Initial support section",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-04-06T17:08:11Z",
+            "mergedAt": "2021-04-08T14:18:46Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/94",
+            "changedFiles": 1,
+            "additions": 5,
+            "deletions": 0
+          }
+        },
+        {
+          "node": {
+            "number": 93,
+            "title": "Bump y18n from 4.0.1 to 5.0.6",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-04-06T07:53:03Z",
+            "mergedAt": "2021-04-06T14:32:18Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/93",
+            "changedFiles": 5,
+            "additions": 20,
+            "deletions": 8470
+          }
+        },
+        {
+          "node": {
+            "number": 92,
+            "title": "Bump @vercel/ncc from 0.27.0 to 0.28.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-04-06T07:52:54Z",
+            "mergedAt": "2021-04-06T14:40:28Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/92",
+            "changedFiles": 3,
+            "additions": 5,
+            "deletions": 4
+          }
+        },
+        {
+          "node": {
+            "number": 91,
+            "title": "Bump uglify-js from 3.13.2 to 3.13.3",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-03-30T14:31:50Z",
+            "mergedAt": "2021-04-05T02:07:41Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/91",
+            "changedFiles": 3,
+            "additions": 9,
+            "deletions": 5
+          }
+        },
+        {
+          "node": {
+            "number": 88,
+            "title": "Releases/v2.1",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-03-30T00:37:57Z",
+            "mergedAt": "2021-03-30T00:45:54Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/88",
+            "changedFiles": 9,
+            "additions": 227,
+            "deletions": 85
+          }
+        },
+        {
+          "node": {
+            "number": 87,
+            "title": "Bump eslint from 7.21.0 to 7.23.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-03-29T05:22:26Z",
+            "mergedAt": "2021-03-29T17:40:28Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/87",
+            "changedFiles": 4,
+            "additions": 93,
+            "deletions": 27
+          }
+        },
+        {
+          "node": {
+            "number": 86,
+            "title": "Bump uglify-js from 3.13.0 to 3.13.2",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-03-22T05:21:49Z",
+            "mergedAt": "2021-03-29T13:22:21Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/86",
+            "changedFiles": 4,
+            "additions": 122,
+            "deletions": 133
+          }
+        },
+        {
+          "node": {
+            "number": 83,
+            "title": "Bump eslint from 7.21.0 to 7.22.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-03-15T05:21:30Z",
+            "mergedAt": "2021-03-17T17:21:27Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/83",
+            "changedFiles": 4,
+            "additions": 44,
+            "deletions": 29
+          }
+        },
+        {
+          "node": {
+            "number": 82,
+            "title": "Bump uglify-js from 3.13.0 to 3.13.1",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-03-12T05:04:47Z",
+            "mergedAt": "2021-03-18T13:04:01Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/82",
+            "changedFiles": 5,
+            "additions": 15,
+            "deletions": 7
+          }
+        },
+        {
+          "node": {
+            "number": 81,
+            "title": "Releases/v2.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-03-02T14:29:14Z",
+            "mergedAt": "2021-03-05T16:07:25Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/81",
+            "changedFiles": 11,
+            "additions": 79,
+            "deletions": 72
+          }
+        },
+        {
+          "node": {
+            "number": 80,
+            "title": "Bump uglify-js from 3.12.1 to 3.13.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-03-02T05:02:54Z",
+            "mergedAt": "2021-03-05T15:48:36Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/80",
+            "changedFiles": 3,
+            "additions": 8,
+            "deletions": 5
+          }
+        },
+        {
+          "node": {
+            "number": 79,
+            "title": "Workflow hygiene",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-03-01T21:58:21Z",
+            "mergedAt": "2021-03-01T22:12:47Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/79",
+            "changedFiles": 8,
+            "additions": 41,
+            "deletions": 36
+          }
+        },
+        {
+          "node": {
+            "number": 78,
+            "title": "Bump eslint from 7.20.0 to 7.21.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-03-01T05:30:20Z",
+            "mergedAt": "2021-03-05T15:55:28Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/78",
+            "changedFiles": 3,
+            "additions": 22,
+            "deletions": 28
+          }
+        },
+        {
+          "node": {
+            "number": 77,
+            "title": "Creates Release v2.0.1",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-02-20T19:22:26Z",
+            "mergedAt": "2021-02-20T19:35:38Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/77",
+            "changedFiles": 7,
+            "additions": 257,
+            "deletions": 169
+          }
+        },
+        {
+          "node": {
+            "number": 76,
+            "title": "Using package.json version instead of separate file",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-02-20T18:05:25Z",
+            "mergedAt": "2021-02-20T19:19:35Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/76",
+            "changedFiles": 6,
+            "additions": 14,
+            "deletions": 12
+          }
+        },
+        {
+          "node": {
+            "number": 74,
+            "title": "Bump eslint from 7.17.0 to 7.20.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-02-15T05:21:39Z",
+            "mergedAt": "2021-02-20T14:57:40Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/74",
+            "changedFiles": 2,
+            "additions": 148,
+            "deletions": 47
+          }
+        },
+        {
+          "node": {
+            "number": 71,
+            "title": "Bump @vercel/ncc from 0.26.1 to 0.27.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-01-12T05:18:47Z",
+            "mergedAt": "2021-02-20T15:05:59Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/71",
+            "changedFiles": 4,
+            "additions": 192,
+            "deletions": 211
+          }
+        },
+        {
+          "node": {
+            "number": 70,
+            "title": "Bump eslint from 7.15.0 to 7.17.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2021-01-04T05:27:36Z",
+            "mergedAt": "2021-01-04T22:05:45Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/70",
+            "changedFiles": 2,
+            "additions": 4,
+            "deletions": 4
+          }
+        },
+        {
+          "node": {
+            "number": 69,
+            "title": "Releases/v2.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": [
+                {
+                  "node": {
+                    "firstReviewedAt": "2020-12-24T14:46:39Z",
+                    "author": {
+                      "reviewedBy": "renedupont"
+                    },
+                    "state": "COMMENTED"
+                  }
+                }
+              ]
+            },
+            "createdAt": "2020-12-24T14:04:13Z",
+            "mergedAt": "2021-01-04T22:58:15Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/69",
+            "changedFiles": 11,
+            "additions": 283,
+            "deletions": 215
+          }
+        },
+        {
+          "node": {
+            "number": 66,
+            "title": "Use Error Message in Workflow",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2020-12-22T18:34:17Z",
+            "mergedAt": "2020-12-22T18:56:10Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/66",
+            "changedFiles": 1,
+            "additions": 6,
+            "deletions": 1
+          }
+        },
+        {
+          "node": {
+            "number": 65,
+            "title": "Bump node-notifier from 8.0.0 to 8.0.1",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2020-12-22T15:41:47Z",
+            "mergedAt": "2020-12-22T18:21:06Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/65",
+            "changedFiles": 4,
+            "additions": 59,
+            "deletions": 35
+          }
+        },
+        {
+          "node": {
+            "number": 64,
+            "title": "Bump eslint from 7.15.0 to 7.16.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2020-12-21T05:30:37Z",
+            "mergedAt": "2020-12-22T18:28:53Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/64",
+            "changedFiles": 2,
+            "additions": 79,
+            "deletions": 100
+          }
+        },
+        {
+          "node": {
+            "number": 63,
+            "title": "Bump @vercel/ncc from 0.25.1 to 0.26.1",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2020-12-21T05:30:05Z",
+            "mergedAt": "2020-12-22T19:49:09Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/63",
+            "changedFiles": 2,
+            "additions": 4,
+            "deletions": 4
+          }
+        },
+        {
+          "node": {
+            "number": 59,
+            "title": "Fixes splitting on spaces incorrectly",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2020-12-16T17:57:10Z",
+            "mergedAt": "2020-12-17T13:57:59Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/59",
+            "changedFiles": 7,
+            "additions": 28,
+            "deletions": 9
+          }
+        },
+        {
+          "node": {
+            "number": 54,
+            "title": "Releases/v1.6",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": [
+                {
+                  "node": {
+                    "firstReviewedAt": "2020-12-14T20:10:49Z",
+                    "author": {
+                      "reviewedBy": "fschmager"
+                    },
+                    "state": "COMMENTED"
+                  }
+                }
+              ]
+            },
+            "createdAt": "2020-12-14T18:29:20Z",
+            "mergedAt": "2020-12-15T19:54:27Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/54",
+            "changedFiles": 12,
+            "additions": 3161,
+            "deletions": 1543
+          }
+        },
+        {
+          "node": {
+            "number": 53,
+            "title": "Bump eslint from 7.14.0 to 7.15.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2020-12-07T05:33:51Z",
+            "mergedAt": "2020-12-14T18:02:05Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/53",
+            "changedFiles": 3,
+            "additions": 91,
+            "deletions": 44
+          }
+        },
+        {
+          "node": {
+            "number": 52,
+            "title": "Bump uglify-js from 2.6.0 to 3.12.1",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2020-12-01T05:28:53Z",
+            "mergedAt": "2020-12-14T18:11:04Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/52",
+            "changedFiles": 3,
+            "additions": 13,
+            "deletions": 115
+          }
+        },
+        {
+          "node": {
+            "number": 51,
+            "title": "Bump jest from 24.9.0 to 26.6.3",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2020-11-24T05:21:22Z",
+            "mergedAt": "2020-12-14T18:27:06Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/51",
+            "changedFiles": 4,
+            "additions": 2979,
+            "deletions": 1412
+          }
+        },
+        {
+          "node": {
+            "number": 49,
+            "title": "Releases/v1.5.1",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2020-11-23T19:54:50Z",
+            "mergedAt": "2020-11-23T20:11:55Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/49",
+            "changedFiles": 7,
+            "additions": 6976,
+            "deletions": 26268
+          }
+        },
+        {
+          "node": {
+            "number": 48,
+            "title": "Dependabot/GitHub actions/mindsers/changelog reader action v2",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2020-11-23T19:19:15Z",
+            "mergedAt": "2020-11-23T19:20:21Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/48",
+            "changedFiles": 3,
+            "additions": 43,
+            "deletions": 4
+          }
+        },
+        {
+          "node": {
+            "number": 47,
+            "title": "Revert \"Bump mindsers/changelog-reader-action from v1 to v2\"",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2020-11-23T19:17:04Z",
+            "mergedAt": "2020-11-23T19:17:17Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/47",
+            "changedFiles": 6,
+            "additions": 26347,
+            "deletions": 7050
+          }
+        },
+        {
+          "node": {
+            "number": 46,
+            "title": "Bump eslint from 6.3.0 to 7.14.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2020-11-23T05:28:54Z",
+            "mergedAt": "2020-11-23T16:24:54Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/46",
+            "changedFiles": 3,
+            "additions": 345,
+            "deletions": 268
+          }
+        },
+        {
+          "node": {
+            "number": 45,
+            "title": "Bump @actions/github from 2.1.1 to 4.0.0",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2020-11-23T05:27:57Z",
+            "mergedAt": "2020-11-23T16:57:46Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/45",
+            "changedFiles": 3,
+            "additions": 5598,
+            "deletions": 25184
+          }
+        },
+        {
+          "node": {
+            "number": 44,
+            "title": "Bump @actions/exec from 1.0.3 to 1.0.4",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2020-11-20T20:21:40Z",
+            "mergedAt": "2020-11-20T21:58:53Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/44",
+            "changedFiles": 4,
+            "additions": 417,
+            "deletions": 255
+          }
+        },
+        {
+          "node": {
+            "number": 43,
+            "title": "Bump @vercel/ncc from 0.23.0 to 0.25.1",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2020-11-20T20:21:15Z",
+            "mergedAt": "2020-11-23T17:01:17Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/43",
+            "changedFiles": 3,
+            "additions": 5411,
+            "deletions": 5404
+          }
+        },
+        {
+          "node": {
+            "number": 41,
+            "title": "Bump mindsers/changelog-reader-action from v1 to v2",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2020-11-20T20:19:22Z",
+            "mergedAt": "2020-11-23T19:16:51Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/41",
+            "changedFiles": 6,
+            "additions": 6967,
+            "deletions": 26264
+          }
+        },
+        {
+          "node": {
+            "number": 40,
+            "title": "Update actions/checkout requirement to v2.3.4",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2020-11-20T20:19:21Z",
+            "mergedAt": "2020-11-23T19:52:07Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/40",
+            "changedFiles": 2,
+            "additions": 6,
+            "deletions": 6
+          }
+        },
+        {
+          "node": {
+            "number": 39,
+            "title": "Updates README for v1.5.0 (#37) and adds Dependabot",
+            "repository": {
+              "nameWithOwner": "dangoslen/changelog-enforcer"
+            },
+            "reviews": {
+              "edges": []
+            },
+            "createdAt": "2020-11-12T19:07:13Z",
+            "mergedAt": "2020-11-20T20:13:13Z",
+            "url": "https://github.com/dangoslen/changelog-enforcer/pull/39",
+            "changedFiles": 2,
+            "additions": 37,
+            "deletions": 6
+          }
+        }
+      ]
+    }
+  }
+}
