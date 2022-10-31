@@ -7,7 +7,7 @@ import requests
 import csv
 
 query = """query {{
-  search(query: \"is:merged is:pr repo:{}\", type: ISSUE, last: 100) {{
+  search(query: \"{}\", type: ISSUE, last: 100) {{
     issueCount
     edges {{
       node {{
@@ -48,7 +48,10 @@ query = """query {{
 }}
 """
  
-def fetch_code_review_metrics(repo, token):
+def fetch_code_review_metrics(query, repo, token):
+    if query is None:
+        query = "is:merged is:pr repo:{}".format(repo)
+
     url = 'https://api.github.com/graphql'
     formatted_query = query.format(repo)
     auth = 'Bearer {}'.format(token)
@@ -120,9 +123,9 @@ def main():
     parser = argparse.ArgumentParser()
     
     parser.add_argument("-r", "--repo", help = "The repository to grab pull request metrics from")
+    parser.add_argument("-q", "--query", help="The query to search for pull requests. See more at <> . This overrides whatever was set via '-r' or '--repo'")
     parser.add_argument("-t", "--token", help = "A GitHub token to access the GitHub API")
     parser.add_argument("-f", "--file", help = "The path to the csv file to generate")
-    parser.add_argument("-g", "---build-graph", action=argparse.BooleanOptionalAction, help = "Build the graph")
 
     # Read arguments from command line
     args = parser.parse_args()
