@@ -5,76 +5,75 @@ import matplotlib.pyplot as plt
 import argparse
 
 ## 
-## Visualization of wait time to total lines of code changed
+## Visualization of cycle time to total lines of code changed
+## This is meant to see if the number of lines does actually affect 
+## the cycle time of the pull request
 ##
-def graph_loc_to_wait(df):
-    fig, ax = plt.subplots()
-    ax.scatter(df.lines_changed, df.cycle_time_minutes, alpha=0.5)
+def graph_cycle_time(ax, df):
+    p = ax[0, 0]
+    p.scatter(df.lines_changed, df.cycle_time_minutes, alpha=0.5)
 
-    ax.set_xlabel('Lines Changed', fontsize=15)
-    ax.set_ylabel('Total Cycle Time (Wait Time)', fontsize=15)
-    ax.set_xticks([])
-    ax.set_yticks([])
+    p.set_xlabel('Lines Changed', fontsize=15)
+    p.set_ylabel('Cycle Time', fontsize=15)
+    p.set_xticks([])
+    p.set_yticks([])
+    p.grid(True)
+    p.set_title('Cycle Time')
 
-    ax.grid(True)
-    fig.tight_layout()
+## 
+## Visualization of cycle time per line to total lines of code changed
+## This is meant to see if the total lines of code changed affects that overall
+## cycle time of each line of code. 
+## i.e. - if having 10 lines of code has a faster "cycle time per line" than 100 lines of code
+##
+def graph_cycle_time_per_line(ax, df):
+    df['cycle_per_loc'] = df.cycle_time_minutes / df.lines_changed
 
-    plt.show()
+    p = ax[0, 1]
+    p.scatter(df.lines_changed, df.cycle_per_loc, alpha=0.5)
 
-def graph_lead_per_loc(df):
+    p.set_xlabel('Lines Changed', fontsize=15)
+    p.set_ylabel('Cycle Time per Line (Cycle /  LoC)', fontsize=15)
+    p.set_xticks([])
+    p.set_yticks([])
+    p.grid(True)
+    p.set_title('Cycle Time per Line')
+
+## 
+## Visualization of cycle time per line to total lines of code changed
+## This is meant to see if the total lines of code changed affects that overall
+## lead time of each line of code. 
+## i.e. - if having 10 lines of code has a faster "lead time per line" than 100 lines of code
+##
+def graph_lead_time_per_loc(ax, df):
     df['lead_per_loc'] = df.lead_time_minutes / df.lines_changed
 
-    fig, ax = plt.subplots()
-    ax.scatter(df.lines_changed, df.lead_per_loc, alpha=0.5)
+    p = ax[1, 0]
+    p.scatter(df.lines_changed, df.lead_per_loc, alpha=0.5)
 
-    ax.set_xlabel('Lines Changed', fontsize=15)
-    ax.set_ylabel('Lead Time per Size (Lead Time /  LoC)', fontsize=15)
-    ax.set_xticks([])
-    ax.set_yticks([])
+    p.set_xlabel('Lines Changed', fontsize=15)
+    p.set_ylabel('Lead Time per Line (Lead /  LoC)', fontsize=15)
+    p.set_xticks([])
+    p.set_yticks([])
+    p.grid(True)
+    p.set_title('Lead Time per Line')
 
-    ax.grid(True)
-    fig.tight_layout()
-
-    plt.show()
-
-##
-## Visualization of wait time per lines of code to total lines of code changed
-## Wait time (minute/loc) is a proxy for throughput per size of the pr
-##
-def graph_minutes_per_loc(df):
-    df['wait_per_loc'] = df.cycle_time_minutes / df.lines_changed
-
-    fig, ax = plt.subplots()
-    ax.scatter(df.lines_changed, df.wait_per_loc, alpha=0.5)
-
-    ax.set_xlabel('Lines Changed', fontsize=15)
-    ax.set_ylabel('Wait Time per Size (Wait Time /  LoC)', fontsize=15)
-    ax.set_xticks([])
-    ax.set_yticks([])
-
-    ax.grid(True)
-    fig.tight_layout()
-
-    plt.show()
 
 ##
 ## Visualization of comments added to total lines of code changed
 ## Proxy for "engagement" of a pr
 ##
-def graph_engagement_per_loc(df):
-    fig, ax = plt.subplots()
-    ax.scatter(df.lines_changed, df.comments_added, alpha=0.5)
+def graph_engagement(ax, df):
+    p = ax[1, 1]
+    p.scatter(df.lines_changed, df.comments_added, alpha=0.5)
 
-    ax.set_xlabel('Lines Changed', fontsize=15)
-    ax.set_ylabel('Comments Added (Engagement)', fontsize=15)
-    ax.set_xticks([])
-    ax.set_yticks([])
-
-    ax.grid(True)
-    fig.tight_layout()
-
-    plt.show()
-
+    p.set_xlabel('Lines Changed', fontsize=15)
+    p.set_ylabel('Comments Added (Engagement)', fontsize=15)
+    p.set_xticks([])
+    p.set_yticks([])
+    p.grid(True)
+    p.set_title('Engagement')
+ 
 def main():
     # Initialize parser
     parser = argparse.ArgumentParser()
@@ -85,10 +84,15 @@ def main():
 
     df = pd.read_csv(args.file)
 
-    graph_loc_to_wait(df)
-    graph_minutes_per_loc(df)
-    graph_lead_per_loc(df)
-    graph_engagement_per_loc(df)
+    fig, ax = plt.subplots(2, 2)
+
+    graph_cycle_time(ax, df)
+    graph_cycle_time_per_line(ax, df)
+    graph_lead_time_per_loc(ax, df)
+    graph_engagement(ax, df)
+
+    fig.tight_layout()
+    plt.show()
 
 if __name__ == "__main__":
     main()
