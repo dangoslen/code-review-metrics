@@ -83,6 +83,8 @@ If cycle time is low (especially for large pull requests), it also an indication
 
 ## Graphing
 
+![](./img/graphs.png)
+
 You can create graphs to see some of this by utilizing the `graph-code-review-metrics.py` script. 
 
 It will show 4 different graphs
