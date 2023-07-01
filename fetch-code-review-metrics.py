@@ -6,7 +6,7 @@ import requests
 
 import csv
 
-query = """query {{
+BASE_QUERY = """query {{
   search(query: \"{}\", type: ISSUE, last: 100) {{
     issueCount
     edges {{
@@ -48,17 +48,24 @@ query = """query {{
 }}
 """
  
-def fetch_code_review_metrics(query, repo, token):
+def fetch_code_review_metrics(query, queryOpts, token):
     if query is None:
-        query = "is:merged is:pr repo:{}".format(repo)
+        queryString = "is:merged is:pr"
+
+        if queryOpts["repo"] is not None:
+            queryString = "{} repo:{}".format(queryString, queryOpts["repo"])
+
+        if queryOpts["org"] is not None:
+            queryString = "{} org:{}".format(queryString, queryOpts["org"])
+
+        query = BASE_QUERY.format(queryString)
 
     url = 'https://api.github.com/graphql'
-    formatted_query = query.format(repo)
     auth = 'Bearer {}'.format(token)
     headers = {
         'Authorization': auth    
     }
-    response = requests.post(url=url, json={'query': formatted_query}, headers=headers)
+    response = requests.post(url=url, json={'query': query}, headers=headers)
     return response
 
 def parse_into_dicts(body):
@@ -122,6 +129,7 @@ def main():
     # Initialize parser
     parser = argparse.ArgumentParser()
     
+    parser.add_argument("-o", "--org", help = "The orginization to grab pull request metrics from")
     parser.add_argument("-r", "--repo", help = "The repository to grab pull request metrics from")
     parser.add_argument("-q", "--query", help="The query to search for pull requests. See more at <> . This overrides whatever was set via '-r' or '--repo'")
     parser.add_argument("-t", "--token", help = "A GitHub token to access the GitHub API")
@@ -130,11 +138,18 @@ def main():
     # Read arguments from command line
     args = parser.parse_args()
 
-    response = fetch_code_review_metrics(args.repo, args.token)
+    queryOpts = {
+        "repo": args.repo,
+        "org": args.org
+    }
+
+    response = fetch_code_review_metrics(args.query, queryOpts, args.token)
     if response.status_code == 200:
         prs = parse_into_dicts(response.json())
         print_as_csv(prs)
-
+    else:
+        print('Error pulling code review data. Status: {}, err: {}'.format(response.status_code, response.json()))
+        exit(1)
 
 if __name__ == "__main__":
     main()

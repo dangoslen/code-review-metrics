@@ -61,7 +61,7 @@ def graph_lead_time_per_loc(ax, df):
 
 ##
 ## Visualization of comments added to total lines of code changed
-## Proxy for "engagement" of a pr
+## Proxy for "engagement" of a pr.
 ##
 def graph_engagement(ax, df):
     p = ax[1, 1]
