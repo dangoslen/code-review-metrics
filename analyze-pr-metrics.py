@@ -191,6 +191,68 @@ def export_weekly_data(weekly_stats, output_dir='.'):
     weekly_stats.to_csv(f'{output_dir}/weekly_author_stats.csv', index=False)
     print(f"\nWeekly statistics exported to: {output_dir}/weekly_author_stats.csv")
 
+def export_detailed_weekly_data(df, output_dir='.'):
+    """Export detailed weekly data including raw PR counts and additional statistics."""
+    
+    # Create detailed weekly analysis with more granular data
+    detailed_weekly = df.groupby(['week_start', 'created_by']).agg({
+        'number': ['count', 'min', 'max'],  # PR count and PR number range
+        'lines_changed': ['count', 'mean', 'sum', 'min', 'max', 'std'],  # Lines changed stats
+        'cycle_time_minutes': ['count', 'mean', 'median', 'min', 'max', 'std'],  # Cycle time stats
+        'lead_time_minutes': ['count', 'mean', 'median', 'min', 'max', 'std'],  # Lead time stats
+        'comments_added': ['count', 'mean', 'sum', 'min', 'max', 'std']  # Comments stats
+    }).round(2)
+    
+    # Flatten column names
+    detailed_weekly.columns = [
+        'pr_count', 'pr_number_min', 'pr_number_max',
+        'lines_count', 'lines_mean', 'lines_sum', 'lines_min', 'lines_max', 'lines_std',
+        'cycle_count', 'cycle_mean', 'cycle_median', 'cycle_min', 'cycle_max', 'cycle_std',
+        'lead_count', 'lead_mean', 'lead_median', 'lead_min', 'lead_max', 'lead_std',
+        'comments_count', 'comments_mean', 'comments_sum', 'comments_min', 'comments_max', 'comments_std'
+    ]
+    
+    # Reset index to make week_start and created_by regular columns
+    detailed_weekly = detailed_weekly.reset_index()
+    
+    # Add some derived metrics
+    detailed_weekly['avg_pr_size'] = detailed_weekly['lines_sum'] / detailed_weekly['pr_count']
+    detailed_weekly['productivity_score'] = detailed_weekly['pr_count'] * detailed_weekly['avg_pr_size']
+    detailed_weekly['efficiency_score'] = detailed_weekly['pr_count'] / (detailed_weekly['cycle_mean'] + 1)  # +1 to avoid division by zero
+    
+    # Round the new columns
+    detailed_weekly[['avg_pr_size', 'productivity_score', 'efficiency_score']] = detailed_weekly[['avg_pr_size', 'productivity_score', 'efficiency_score']].round(2)
+    
+    # Save detailed weekly data
+    detailed_weekly.to_csv(f'{output_dir}/detailed_weekly_author_stats.csv', index=False)
+    print(f"Detailed weekly statistics exported to: {output_dir}/detailed_weekly_author_stats.csv")
+    
+    return detailed_weekly
+
+def export_raw_pr_data_by_week(df, output_dir='.'):
+    """Export raw PR data grouped by week and author for detailed analysis."""
+    
+    # Add week information to the original dataframe
+    df_with_week = df.copy()
+    df_with_week['week_start'] = df_with_week['created_at'].dt.to_period('W-MON').dt.start_time
+    df_with_week['week_end'] = df_with_week['week_start'] + pd.Timedelta(days=6)
+    
+    # Sort by week and author for better readability
+    df_with_week = df_with_week.sort_values(['week_start', 'created_by', 'created_at'])
+    
+    # Select relevant columns for export
+    export_columns = [
+        'week_start', 'week_end', 'created_by', 'number', 'title', 'url',
+        'created_at', 'merged_at', 'first_reviewed_at', 'first_reviewed_by',
+        'cycle_time_minutes', 'lead_time_minutes', 'lines_changed', 'comments_added'
+    ]
+    
+    # Export raw data
+    df_with_week[export_columns].to_csv(f'{output_dir}/raw_prs_by_week.csv', index=False)
+    print(f"Raw PR data by week exported to: {output_dir}/raw_prs_by_week.csv")
+    
+    return df_with_week
+
 def main():
     parser = argparse.ArgumentParser(description='Analyze PR metrics by week and author')
     parser.add_argument('csv_file', help='Path to the CSV file with PR metrics')
@@ -211,6 +273,12 @@ def main():
     # Export weekly data
     export_weekly_data(weekly_stats, args.output_dir)
     
+    # Export detailed weekly data with comprehensive statistics
+    detailed_weekly = export_detailed_weekly_data(df, args.output_dir)
+    
+    # Export raw PR data grouped by week
+    raw_data = export_raw_pr_data_by_week(df, args.output_dir)
+    
     # Create author summary
     author_summary = create_author_summary_table(df, weekly_stats, args.output_dir)
     
@@ -221,6 +289,13 @@ def main():
         print(f"Plots saved to: {args.output_dir}/weekly_analysis.png")
     
     print(f"\nAnalysis complete! Files saved to: {args.output_dir}/")
+    print("\nGenerated files:")
+    print("- weekly_author_stats.csv: Basic weekly statistics")
+    print("- detailed_weekly_author_stats.csv: Comprehensive weekly statistics with derived metrics")
+    print("- raw_prs_by_week.csv: Raw PR data organized by week and author")
+    print("- author_summary.csv: Overall author performance summary")
+    if not args.no_plots:
+        print("- weekly_analysis.png: Visual dashboard of weekly trends")
 
 if __name__ == "__main__":
     main() 
