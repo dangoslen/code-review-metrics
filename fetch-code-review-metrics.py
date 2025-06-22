@@ -32,6 +32,13 @@ BASE_QUERY = """query {{
             }}
           }}
         }}
+        timelineItems(itemTypes: [REVIEW_REQUESTED_EVENT], first: 1) {{
+          nodes {{
+            ... on ReviewRequestedEvent {{
+              createdAt
+            }}
+          }}
+        }}
         createdAt
         createdBy: author {{
             login
@@ -93,14 +100,24 @@ def parse_pr_into_dict(pr):
         'comments_added': node["comments"]["totalCount"]
     }
 
-    reviews = node["reviews"]["edges"]
-    if len(reviews) > 0:
-        first_review = reviews[0]['node']
-        reviewed_at = first_review['reviewedAt']
-        lead_time = time_difference_in_minutes(created_at, reviewed_at)
-        pr_dict['first_reviewed_at'] = reviewed_at
-        pr_dict['first_reviewed_by'] = first_review['reviewedBy']['login']
-        pr_dict['lead_time_minutes'] = lead_time
+    reviews = node.get("reviews", {}).get("edges", [])
+    if not reviews:
+        return pr_dict
+
+    first_review = reviews[0]['node']
+    reviewed_at = first_review['reviewedAt']
+
+    lead_time_start = created_at
+    timeline_items = node.get("timelineItems", {}).get("nodes", [])
+    if timeline_items:
+        review_requested_at = timeline_items[0]['createdAt']
+        if parse(reviewed_at) > parse(review_requested_at):
+            lead_time_start = review_requested_at
+
+    lead_time = time_difference_in_minutes(lead_time_start, reviewed_at)
+    pr_dict['first_reviewed_at'] = reviewed_at
+    pr_dict['first_reviewed_by'] = first_review['reviewedBy']['login']
+    pr_dict['lead_time_minutes'] = lead_time
 
     return pr_dict
 
@@ -110,8 +127,8 @@ def time_difference_in_minutes(start_ts, end_ts):
     start = parse(start_ts)
     return (end - start).total_seconds() / 60
 
-def print_as_csv(prs):
-    with open('code_review_metrics.csv', 'w', newline='') as csvfile:
+def print_as_csv(prs, filename):
+    with open(filename, 'w', newline='') as csvfile:
 
         field_names = [ 
             'title', 'number', 'url', 'created_by', 'created_at', 'first_reviewed_at', 'first_reviewed_by', 'merged_at',
@@ -146,7 +163,7 @@ def main():
     response = fetch_code_review_metrics(args.query, queryOpts, args.token)
     if response.status_code == 200:
         prs = parse_into_dicts(response.json())
-        print_as_csv(prs)
+        print_as_csv(prs, args.file)
     else:
         print('Error pulling code review data. Status: {}, err: {}'.format(response.status_code, response.json()))
         exit(1)
