@@ -16,8 +16,14 @@ def load_and_prepare_data(csv_file):
     df['merged_at'] = pd.to_datetime(df['merged_at'])
     df['first_reviewed_at'] = pd.to_datetime(df['first_reviewed_at'], errors='coerce')
     
-    # Add week column (Monday as start of week)
-    df['week_start'] = df['created_at'].dt.to_period('W-MON').dt.start_time
+    # Add week columns (Monday 00:00:00 to Sunday 23:59:59)
+    # Manually calculate the Monday of each week
+    # Monday is weekday 0, so we subtract the current weekday to get to Monday
+    df['week_start'] = df['created_at'] - pd.to_timedelta(df['created_at'].dt.weekday, unit='D')
+    # Set time to 00:00:00 for Monday
+    df['week_start'] = df['week_start'].dt.normalize()
+    # Get the Sunday of the week (week_start + 6 days)
+    df['week_end'] = df['week_start'] + pd.Timedelta(days=6, hours=23, minutes=59, seconds=59)
     
     return df
 
@@ -231,26 +237,24 @@ def export_detailed_weekly_data(df, output_dir='.'):
 
 def export_raw_pr_data_by_week(df, output_dir='.'):
     """Export raw PR data grouped by week and author for detailed analysis."""
-    
-    # Add week information to the original dataframe
+
+    # Add week information to the original dataframe (week_start and week_end already exist)
     df_with_week = df.copy()
-    df_with_week['week_start'] = df_with_week['created_at'].dt.to_period('W-MON').dt.start_time
-    df_with_week['week_end'] = df_with_week['week_start'] + pd.Timedelta(days=6)
-    
+
     # Sort by week and author for better readability
     df_with_week = df_with_week.sort_values(['week_start', 'created_by', 'created_at'])
-    
+
     # Select relevant columns for export
     export_columns = [
         'week_start', 'week_end', 'created_by', 'number', 'title', 'url',
         'created_at', 'merged_at', 'first_reviewed_at', 'first_reviewed_by',
         'cycle_time_minutes', 'lead_time_minutes', 'lines_changed', 'comments_added'
     ]
-    
+
     # Export raw data
     df_with_week[export_columns].to_csv(f'{output_dir}/raw_prs_by_week.csv', index=False)
     print(f"Raw PR data by week exported to: {output_dir}/raw_prs_by_week.csv")
-    
+
     return df_with_week
 
 def main():
