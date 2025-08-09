@@ -40,7 +40,7 @@ def analyze_by_week_and_author(df):
     
     # Flatten column names
     weekly_author_stats.columns = [
-        'pr_count', 'avg_lines_changed', 'total_lines_changed', 
+        'pr_count', 'avg_lines_changed', 'total_lines_changed',
         'avg_cycle_time_minutes', 'avg_lead_time_minutes', 'avg_comments'
     ]
     

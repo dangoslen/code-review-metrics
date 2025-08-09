@@ -233,7 +233,12 @@ def main():
 
     if isinstance(prs, requests.Response):
         # Error response
-        print('Error pulling code review data. Status: {}, err: {}'.format(prs.status_code, prs.json()))
+        try:
+            error_details = prs.json()
+        except requests.exceptions.JSONDecodeError:
+            error_details = prs.text if prs.text else "No response body"
+
+        print('Error pulling code review data. Status: {}, err: {}'.format(prs.status_code, error_details))
         exit(1)
 
     print(f"Found {len(prs)} pull requests")
