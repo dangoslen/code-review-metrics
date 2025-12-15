@@ -139,6 +139,9 @@ def main():
     # Read arguments from command line
     args = parser.parse_args()
 
+    if not args.token:
+        parser.error(f"argument -t/--token: token value is unset")
+
     queryOpts = {
         "repo": args.repo,
         "org": args.org
