@@ -110,8 +110,8 @@ def time_difference_in_minutes(start_ts, end_ts):
     start = parse(start_ts)
     return (end - start).total_seconds() / 60
 
-def print_as_csv(prs):
-    with open('code_review_metrics.csv', 'w', newline='') as csvfile:
+def print_as_csv(prs, file):
+    with open(file, 'w', newline='') as csvfile:
 
         field_names = [ 
             'title', 'number', 'url', 'created_by', 'created_at', 'first_reviewed_at', 'first_reviewed_by', 'merged_at',
@@ -129,11 +129,11 @@ def main():
     # Initialize parser
     parser = argparse.ArgumentParser()
     
-    parser.add_argument("-o", "--org", help = "The orginization to grab pull request metrics from")
-    parser.add_argument("-r", "--repo", help = "The repository to grab pull request metrics from")
+    parser.add_argument("-o", "--org", help="The orginization to grab pull request metrics from")
+    parser.add_argument("-r", "--repo", required=True, help="The repository to grab pull request metrics from")
     parser.add_argument("-q", "--query", help="The query to search for pull requests. See more at <> . This overrides whatever was set via '-r' or '--repo'")
-    parser.add_argument("-t", "--token", help = "A GitHub token to access the GitHub API")
-    parser.add_argument("-f", "--file", help = "The path to the csv file to generate")
+    parser.add_argument("-t", "--token", help="A GitHub token to access the GitHub API")
+    parser.add_argument("-f", "--file", default="code_review_metrics.csv", help="The path to the csv file to generate")
 
     # Read arguments from command line
     args = parser.parse_args()
@@ -146,7 +146,7 @@ def main():
     response = fetch_code_review_metrics(args.query, queryOpts, args.token)
     if response.status_code == 200:
         prs = parse_into_dicts(response.json())
-        print_as_csv(prs)
+        print_as_csv(prs, args.file)
     else:
         print('Error pulling code review data. Status: {}, err: {}'.format(response.status_code, response.json()))
         exit(1)
