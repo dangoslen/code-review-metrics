@@ -3,6 +3,7 @@
 from dateutil.parser import parse
 import argparse
 import requests
+import urllib.parse
 
 import csv
 
@@ -48,7 +49,7 @@ BASE_QUERY = """query {{
 }}
 """
  
-def fetch_code_review_metrics(query, queryOpts, token):
+def fetch_code_review_metrics(query, queryOpts, token, api_url):
     if query is None:
         queryString = "is:merged is:pr"
 
@@ -60,7 +61,7 @@ def fetch_code_review_metrics(query, queryOpts, token):
 
         query = BASE_QUERY.format(queryString)
 
-    url = 'https://api.github.com/graphql'
+    url = urllib.parse.urljoin(api_url, "graphql")
     auth = 'Bearer {}'.format(token)
     headers = {
         'Authorization': auth    
@@ -129,11 +130,12 @@ def main():
     # Initialize parser
     parser = argparse.ArgumentParser()
     
-    parser.add_argument("-o", "--org", help = "The orginization to grab pull request metrics from")
+    parser.add_argument("-o", "--org", help = "The organization to grab pull request metrics from")
     parser.add_argument("-r", "--repo", help = "The repository to grab pull request metrics from")
     parser.add_argument("-q", "--query", help="The query to search for pull requests. See more at <> . This overrides whatever was set via '-r' or '--repo'")
     parser.add_argument("-t", "--token", help = "A GitHub token to access the GitHub API")
     parser.add_argument("-f", "--file", help = "The path to the csv file to generate")
+    parser.add_argument("-a", "--api-url", default="https://api.github.com", help="The GitHub API URL to use to grab metrics")
 
     # Read arguments from command line
     args = parser.parse_args()
@@ -143,7 +145,7 @@ def main():
         "org": args.org
     }
 
-    response = fetch_code_review_metrics(args.query, queryOpts, args.token)
+    response = fetch_code_review_metrics(args.query, queryOpts, args.token, args.api_url)
     if response.status_code == 200:
         prs = parse_into_dicts(response.json())
         print_as_csv(prs)
