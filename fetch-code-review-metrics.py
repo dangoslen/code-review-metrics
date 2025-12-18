@@ -2,6 +2,7 @@
 
 from dateutil.parser import parse
 import argparse
+import os
 import requests
 
 import csv
@@ -132,11 +133,14 @@ def main():
     parser.add_argument("-o", "--org", help = "The orginization to grab pull request metrics from")
     parser.add_argument("-r", "--repo", help = "The repository to grab pull request metrics from")
     parser.add_argument("-q", "--query", help="The query to search for pull requests. See more at <> . This overrides whatever was set via '-r' or '--repo'")
-    parser.add_argument("-t", "--token", help = "A GitHub token to access the GitHub API")
+    parser.add_argument("-t", "--token", default=os.getenv("GITHUB_TOKEN"), help="A GitHub token to access the GitHub API")
     parser.add_argument("-f", "--file", help = "The path to the csv file to generate")
 
     # Read arguments from command line
     args = parser.parse_args()
+
+    if not args.token:
+        parser.error(f"argument -t/--token: token value is unset")
 
     queryOpts = {
         "repo": args.repo,
