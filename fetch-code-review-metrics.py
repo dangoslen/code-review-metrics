@@ -131,7 +131,7 @@ def main():
     # Initialize parser
     parser = argparse.ArgumentParser()
     
-    parser.add_argument("-o", "--org", help="The orginization to grab pull request metrics from")
+    parser.add_argument("-o", "--org", help="The organization to grab pull request metrics from")
     parser.add_argument("-r", "--repo", required=True, help="The repository to grab pull request metrics from")
     parser.add_argument("-q", "--query", help="The query to search for pull requests. See more at <> . This overrides whatever was set via '-r' or '--repo'")
     parser.add_argument("-t", "--token", help="A GitHub token to access the GitHub API")
