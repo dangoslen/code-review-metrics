@@ -3,6 +3,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import argparse
+import numpy as np
 
 ## 
 ## Visualization of cycle time to total lines of code changed
@@ -15,8 +16,8 @@ def graph_cycle_time(ax, df):
 
     p.set_xlabel('Lines Changed', fontsize=15)
     p.set_ylabel('Cycle Time', fontsize=15)
-    p.set_xticks([])
-    p.set_yticks([])
+    p.set_xticks(np.arange(0, df.lines_changed.max() + 1, step=round(df.lines_changed.max() / 10)))
+    p.set_yticks(np.arange(0, df.cycle_time_minutes.max() + 1, step=round(df.cycle_time_minutes.max() / 10)))
     p.grid(True)
     p.set_title('Cycle Time')
 
@@ -34,8 +35,8 @@ def graph_cycle_time_per_line(ax, df):
 
     p.set_xlabel('Lines Changed', fontsize=15)
     p.set_ylabel('Cycle Time per Line (Cycle /  LoC)', fontsize=15)
-    p.set_xticks([])
-    p.set_yticks([])
+    p.set_xticks(np.arange(0, df.lines_changed.max() + 1, step=round(df.lines_changed.max() / 10)))
+    p.set_yticks(np.arange(0, df.cycle_per_loc.max() + 1, step=round(df.cycle_per_loc.max() / 10)))
     p.grid(True)
     p.set_title('Cycle Time per Line')
 
@@ -53,8 +54,8 @@ def graph_lead_time_per_loc(ax, df):
 
     p.set_xlabel('Lines Changed', fontsize=15)
     p.set_ylabel('Lead Time per Line (Lead /  LoC)', fontsize=15)
-    p.set_xticks([])
-    p.set_yticks([])
+    p.set_xticks(np.arange(0, df.lines_changed.max() + 1, step=round(df.lines_changed.max() / 10)))
+    p.set_yticks(np.arange(0, df.lead_per_loc.max() + 1, step=round(df.lead_per_loc.max() / 10)))
     p.grid(True)
     p.set_title('Lead Time per Line')
 
@@ -69,8 +70,8 @@ def graph_engagement(ax, df):
 
     p.set_xlabel('Lines Changed', fontsize=15)
     p.set_ylabel('Comments Added (Engagement)', fontsize=15)
-    p.set_xticks([])
-    p.set_yticks([])
+    p.set_xticks(np.arange(0, df.lines_changed.max() + 1, step=round(df.lines_changed.max() / 10)))
+    p.set_yticks(np.arange(0, df.comments_added.max() + 1, step=max(1, round(df.comments_added.max() / 10))))
     p.grid(True)
     p.set_title('Engagement')
  
